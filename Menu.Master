@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.Master.cs" Inherits="AracTakipSitesi.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style>
+      .button {
+       display: block;
+        padding: 12px 16px;
+        background-color: #27ae60;
+        color: white;
+        text-decoration: none;
+    }
+      .button:hover
+      {
+          
+            background-color: #23834c;
+      }
+    }
+    </style>
+    <link rel="shortcut icon" href="./image/car.ico" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Araç Takip Sistemi</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">   
+    <form id="form1" runat="server">
+    <center>
+            <div id="menu" runat="server">
+                <ul>
+                  <li><a href="AracTakip.aspx">Araç Takip</a></li>
+
+                  <li><a href="AracKayit.aspx">Araç Kayıt</a></li>
+                    
+                </ul>
+
+            </div>    
+        
+            <div>  
+                <h2> <asp:Label ID="lblAd" runat="server" Text="Label"></asp:Label>
+                <asp:Button ID="Button1" class="button" runat="server" Text="ÇIKIŞ" OnClick="cikis_Click"></asp:Button></h2>
+             </div>
+        
+       </center>
+ 
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

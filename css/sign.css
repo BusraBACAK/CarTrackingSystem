@@ -1,0 +1,140 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #ecf0f1;
+  margin: 0;
+}
+.logo-space {
+	height: 250px;
+	background-color: #1abc9c;
+	-webkit-animation-duration: 800ms;
+  -webkit-animation-name: slideInDown;
+}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.authForm {
+  position: relative;
+  width: 100%;
+	margin-top: -89px;
+	margin-bottom:10px;
+	-webkit-animation-duration: 800ms;
+  -webkit-animation-name: slideInUp;
+
+  
+}
+.formLists {
+   display: -webkit-inline-box;
+}
+.member-list-singin {
+    width: 300px;
+	background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;	   
+	position: relative;
+    left:40%;
+	
+}
+	.member-list-newAccount {
+		background-color: #ffffff;
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;   
+	position: relative;
+    left:40%;
+}
+.form-title {
+			background-color: #2c3e50;
+			padding: 30px 36px;
+			color: #ffffff;
+      border-radius: 3px 3px 0 0;
+}
+h1 {
+	text-align: left;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0px;
+}
+.sidebar-login {
+	padding: 20px 36px 46px;
+	text-align: center;
+}
+.forgotpass {
+	margin-top: 24px;
+	color: #545455;
+}
+.singIn-button {
+	text-align:center;
+	margin: auto;
+	width: 100%;
+	margin-top: 25px;
+  background-color: #e74c3c;
+  height: 36px;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: bold;
+}
+input {
+	text-align: left;
+  height: 36px;
+  width: 221px;
+  display: block;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 300;
+  padding: 0 0 0 5px;
+  margin-bottom: 15px;
+  
+}
+/*input:focus {
+  border-bottom: 2px solid rgb(3, 169, 245);
+  outline: none;
+  box-shadow: none;
+}*/
+
+.newAccount {
+		padding: 20px 36px 46px;
+}
+.sing_up {
+	text-align:center;
+		width: 100%;
+		background-color: #e74c3c;
+    height: 36px;
+    border: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.inputContainer {
+    display: inline-flex;
+    width: 228px;
+}
+.userName-input {
+    width: 50%;
+    margin-right: 15px;
+}
+.password-input {
+  width: 50%;
+}
